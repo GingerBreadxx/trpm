@@ -1,0 +1,28 @@
+﻿<Window x:Class="comp_club.InfoEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:comp_club"
+        mc:Ignorable="d"
+        Title="InfoEdit" Height="327" Width="378">
+    <Grid Margin="0,0,0,-16">
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="70,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="66,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="70,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="Дата рег." HorizontalAlignment="Left" Margin="70,160,0,0" VerticalAlignment="Top"/>
+        <Label Content="Баланс" HorizontalAlignment="Left" Margin="70,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="Скидка" HorizontalAlignment="Left" Margin="70,191,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="login" Text="{Binding login}" HorizontalAlignment="Left" Margin="197,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Номер тел." HorizontalAlignment="Left" Margin="75,217,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="password" Text="{Binding password}" HorizontalAlignment="Left" Margin="197,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="fio" Text="{Binding fio}" HorizontalAlignment="Left" Margin="197,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="balance" Text="{Binding balance}" HorizontalAlignment="Left" Margin="197,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="data_reg" Text="{Binding data_reg}" HorizontalAlignment="Left" Margin="197,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="discount" Text="{Binding discount}" HorizontalAlignment="Left" Margin="197,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="phone" Text="{Binding phone}" HorizontalAlignment="Left" Margin="197,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="save" Content="Сохранить" HorizontalAlignment="Center" Margin="0,262,0,0" VerticalAlignment="Top" Click="save_Click"/>
+        <ComboBox DisplayMemberPath="login" x:Name="comboUser" HorizontalAlignment="Left" Margin="197,10,0,0" VerticalAlignment="Top" Width="120" Text="Выберите пользователя"/>
+        <Label Content="Выберите пользователя" HorizontalAlignment="Left" Margin="4,6,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
